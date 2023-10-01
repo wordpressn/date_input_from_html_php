@@ -1,0 +1,12 @@
+    <label for="start">Start date:</label>
+<form action="" method="POST">
+<input type="date" id="start" name="tdate" value="" min="2023-12-01"  />
+<button name="submit">  Submit</button>
+</form>
+<?php
+$datec = "" ;
+if(isset($_POST['submit'])){
+    $datec =   $_POST['tdate'] ; 
+}
+?>
+<h1> <?php echo $datec ;   ?> </h1>
